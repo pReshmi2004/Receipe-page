@@ -10,13 +10,13 @@ body{
     background-color:  hsl(30, 54%, 90%);
     display: flex;
     justify-content: center;
-    height: 2000px;
+    height: 120rem;
 }
 .container{
     position: absolute;
-    width: 750px;
-    margin: 100px;
-    padding: 30px;
+    max-width: min-content;
+    margin: 5rem;
+    padding: 1rem;
     background-color: hsl(0, 0%, 100%);
     display: flex;
     flex-direction: column;
@@ -26,11 +26,13 @@ body{
 .img{
     display: flex;
     justify-content: center;
+    max-height: 20rem;
 }
 .img img{
-    height: 45vh;
-    width: 48vw;
-    margin: 20px 20px 40px 20px;
+    
+    max-height: 100%;
+    max-width: 100%;
+    margin: 8px 0px 8px 0px;
     border-radius: 20px;
 }
 
@@ -104,15 +106,30 @@ h2{
     margin-right: 19vw;
 }
 
-hr::marker{
-    color: hsl(30, 18%, 87%);
-}
-
-
 table td p{
-    color: hsl(332, 51%, 32%);
+    color: hsl(332, 51%, 32%)
 }
 
+hr{
+    border: solid 1px hsl(30, 18%, 87%);
+}
+
+table {
+    border-collapse:collapse;
+    width: 100%;
+    
+}
+
+
+
+table tr,td{
+    border-top: none;
+    border-right: none;
+    border-bottom:  solid 1px hsl(30, 18%, 87%); 
+}
 .attribution{
+    display: flex;
+    justify-content: center;
     margin: 20px;
+   
 }
